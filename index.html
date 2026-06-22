@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Quiz Game</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app" id="app">
+    <!-- Left rail -->
+    <aside class="rail">
+      <header class="brand">
+        <span class="logo" aria-hidden="true">
+          <svg width="34" height="34" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="36" height="36" rx="11" fill="#ffffff"/>
+            <path d="M13.4 14.2 a4.6 4.6 0 0 1 8.9 1.5 c0 3-3.3 3.3-3.3 5.6" stroke="#6b4eef" stroke-width="2.7" stroke-linecap="round" fill="none"/>
+            <circle cx="18.7" cy="26" r="1.9" fill="#6b4eef"/>
+          </svg>
+        </span>
+        <span>Quiz<b>Game</b></span>
+      </header>
+
+      <p class="rail-tag">Five categories.<br>One ticking clock.<br>How sharp are you?</p>
+
+      <div class="hud">
+        <span class="hud-cat" id="qCat">—</span>
+        <div class="hud-q">Question <b id="qNum">1</b><small> / <span id="qTotal">10</span></small></div>
+        <div class="dots" id="dots"></div>
+        <div class="hud-score"><b id="qScore">0</b><small>points</small></div>
+      </div>
+
+      <span class="blob blob1" aria-hidden="true"></span>
+      <span class="blob blob2" aria-hidden="true"></span>
+    </aside>
+
+    <!-- Right stage -->
+    <main class="stage">
+      <!-- START -->
+      <section id="start" class="screen">
+        <h1>Test your knowledge</h1>
+        <p class="lead">Pick a category and a length, then race the clock.</p>
+        <div class="fields">
+          <label>Category
+            <select id="category"></select>
+          </label>
+          <label>Questions
+            <select id="amount">
+              <option value="5">5</option>
+              <option value="10" selected>10</option>
+              <option value="0">All</option>
+            </select>
+          </label>
+        </div>
+        <button class="btn big" id="startBtn">Start quiz</button>
+      </section>
+
+      <!-- QUIZ -->
+      <section id="quiz" class="screen hidden">
+        <div class="timer"><i id="timerFill"></i></div>
+        <h2 class="question" id="qText">…</h2>
+        <div class="options" id="options"></div>
+      </section>
+
+      <!-- RESULT -->
+      <section id="result" class="screen hidden">
+        <div class="result-emoji" id="rEmoji"></div>
+        <h1 id="rTitle">Nice!</h1>
+        <div class="result-score" id="rScore">0 / 10</div>
+        <p class="lead" id="rLine">—</p>
+        <button class="btn big" id="againBtn">Play again</button>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

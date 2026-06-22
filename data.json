@@ -1,0 +1,452 @@
+{
+  "categories": [
+    "Arts",
+    "Geography",
+    "History",
+    "Math",
+    "Science"
+  ],
+  "count": 40,
+  "questions": [
+    {
+      "category": "Geography",
+      "q": "What is the capital of Australia?",
+      "options": [
+        "Melbourne",
+        "Sydney",
+        "Perth",
+        "Canberra"
+      ],
+      "answer": 3
+    },
+    {
+      "category": "Geography",
+      "q": "Which is the largest ocean on Earth?",
+      "options": [
+        "Arctic",
+        "Indian",
+        "Pacific",
+        "Atlantic"
+      ],
+      "answer": 2
+    },
+    {
+      "category": "Geography",
+      "q": "What is the capital of Canada?",
+      "options": [
+        "Toronto",
+        "Montreal",
+        "Vancouver",
+        "Ottawa"
+      ],
+      "answer": 3
+    },
+    {
+      "category": "Geography",
+      "q": "Which country is the largest by land area?",
+      "options": [
+        "Canada",
+        "China",
+        "Russia",
+        "United States"
+      ],
+      "answer": 2
+    },
+    {
+      "category": "Geography",
+      "q": "Mount Everest lies in which mountain range?",
+      "options": [
+        "Andes",
+        "Alps",
+        "Rockies",
+        "Himalayas"
+      ],
+      "answer": 3
+    },
+    {
+      "category": "Geography",
+      "q": "What is the capital of Brazil?",
+      "options": [
+        "Rio de Janeiro",
+        "Salvador",
+        "São Paulo",
+        "Brasília"
+      ],
+      "answer": 3
+    },
+    {
+      "category": "Geography",
+      "q": "How many continents are there?",
+      "options": [
+        "6",
+        "5",
+        "7",
+        "8"
+      ],
+      "answer": 2
+    },
+    {
+      "category": "Geography",
+      "q": "The Sahara Desert is on which continent?",
+      "options": [
+        "Asia",
+        "South America",
+        "Africa",
+        "Australia"
+      ],
+      "answer": 2
+    },
+    {
+      "category": "Science",
+      "q": "What is the chemical symbol for gold?",
+      "options": [
+        "Au",
+        "Gd",
+        "Ag",
+        "Go"
+      ],
+      "answer": 0
+    },
+    {
+      "category": "Science",
+      "q": "Which planet is known as the Red Planet?",
+      "options": [
+        "Jupiter",
+        "Mercury",
+        "Mars",
+        "Venus"
+      ],
+      "answer": 2
+    },
+    {
+      "category": "Science",
+      "q": "Which gas do plants absorb from the air?",
+      "options": [
+        "Nitrogen",
+        "Oxygen",
+        "Hydrogen",
+        "Carbon dioxide"
+      ],
+      "answer": 3
+    },
+    {
+      "category": "Science",
+      "q": "How many bones are in the adult human body?",
+      "options": [
+        "198",
+        "212",
+        "201",
+        "206"
+      ],
+      "answer": 3
+    },
+    {
+      "category": "Science",
+      "q": "What is the powerhouse of the cell?",
+      "options": [
+        "Chloroplast",
+        "Nucleus",
+        "Mitochondria",
+        "Ribosome"
+      ],
+      "answer": 2
+    },
+    {
+      "category": "Science",
+      "q": "Which planet is closest to the Sun?",
+      "options": [
+        "Earth",
+        "Mars",
+        "Venus",
+        "Mercury"
+      ],
+      "answer": 3
+    },
+    {
+      "category": "Science",
+      "q": "What is the pH of pure water?",
+      "options": [
+        "7",
+        "0",
+        "14",
+        "10"
+      ],
+      "answer": 0
+    },
+    {
+      "category": "Science",
+      "q": "What force pulls objects toward Earth?",
+      "options": [
+        "Inertia",
+        "Gravity",
+        "Friction",
+        "Magnetism"
+      ],
+      "answer": 1
+    },
+    {
+      "category": "History",
+      "q": "In which year did World War II end?",
+      "options": [
+        "1939",
+        "1950",
+        "1918",
+        "1945"
+      ],
+      "answer": 3
+    },
+    {
+      "category": "History",
+      "q": "Who was the first person to walk on the Moon?",
+      "options": [
+        "Buzz Aldrin",
+        "Michael Collins",
+        "Neil Armstrong",
+        "Yuri Gagarin"
+      ],
+      "answer": 2
+    },
+    {
+      "category": "History",
+      "q": "Which empire built the Colosseum?",
+      "options": [
+        "Persian",
+        "Ottoman",
+        "Greek",
+        "Roman"
+      ],
+      "answer": 3
+    },
+    {
+      "category": "History",
+      "q": "In which year did the Berlin Wall fall?",
+      "options": [
+        "1989",
+        "1991",
+        "1985",
+        "1979"
+      ],
+      "answer": 0
+    },
+    {
+      "category": "History",
+      "q": "When did the Titanic sink?",
+      "options": [
+        "1912",
+        "1920",
+        "1898",
+        "1905"
+      ],
+      "answer": 0
+    },
+    {
+      "category": "History",
+      "q": "Who was the first President of the United States?",
+      "options": [
+        "George Washington",
+        "John Adams",
+        "Abraham Lincoln",
+        "Thomas Jefferson"
+      ],
+      "answer": 0
+    },
+    {
+      "category": "History",
+      "q": "In which country did the Renaissance begin?",
+      "options": [
+        "France",
+        "Spain",
+        "England",
+        "Italy"
+      ],
+      "answer": 3
+    },
+    {
+      "category": "History",
+      "q": "The Great Pyramid was built in which country?",
+      "options": [
+        "Greece",
+        "Iraq",
+        "Egypt",
+        "Mexico"
+      ],
+      "answer": 2
+    },
+    {
+      "category": "Math",
+      "q": "What is 7 × 8?",
+      "options": [
+        "64",
+        "56",
+        "54",
+        "48"
+      ],
+      "answer": 1
+    },
+    {
+      "category": "Math",
+      "q": "What is the square root of 144?",
+      "options": [
+        "11",
+        "13",
+        "12",
+        "14"
+      ],
+      "answer": 2
+    },
+    {
+      "category": "Math",
+      "q": "How many sides does a hexagon have?",
+      "options": [
+        "8",
+        "7",
+        "5",
+        "6"
+      ],
+      "answer": 3
+    },
+    {
+      "category": "Math",
+      "q": "What is 15% of 200?",
+      "options": [
+        "20",
+        "25",
+        "30",
+        "35"
+      ],
+      "answer": 2
+    },
+    {
+      "category": "Math",
+      "q": "What is 2 to the power of 10?",
+      "options": [
+        "1000",
+        "512",
+        "1024",
+        "2048"
+      ],
+      "answer": 2
+    },
+    {
+      "category": "Math",
+      "q": "The angles inside a triangle add up to?",
+      "options": [
+        "180°",
+        "90°",
+        "270°",
+        "360°"
+      ],
+      "answer": 0
+    },
+    {
+      "category": "Math",
+      "q": "What is the Roman numeral for 50?",
+      "options": [
+        "X",
+        "L",
+        "D",
+        "C"
+      ],
+      "answer": 1
+    },
+    {
+      "category": "Math",
+      "q": "Which of these is a prime number?",
+      "options": [
+        "11",
+        "21",
+        "15",
+        "9"
+      ],
+      "answer": 0
+    },
+    {
+      "category": "Arts",
+      "q": "Who painted the Mona Lisa?",
+      "options": [
+        "Leonardo da Vinci",
+        "Michelangelo",
+        "Raphael",
+        "Donatello"
+      ],
+      "answer": 0
+    },
+    {
+      "category": "Arts",
+      "q": "Who painted 'The Starry Night'?",
+      "options": [
+        "Claude Monet",
+        "Salvador Dalí",
+        "Vincent van Gogh",
+        "Pablo Picasso"
+      ],
+      "answer": 2
+    },
+    {
+      "category": "Arts",
+      "q": "How many keys does a standard piano have?",
+      "options": [
+        "76",
+        "61",
+        "88",
+        "100"
+      ],
+      "answer": 2
+    },
+    {
+      "category": "Arts",
+      "q": "In which city is the Louvre museum?",
+      "options": [
+        "London",
+        "Rome",
+        "Madrid",
+        "Paris"
+      ],
+      "answer": 3
+    },
+    {
+      "category": "Arts",
+      "q": "Who wrote the play 'Romeo and Juliet'?",
+      "options": [
+        "Charles Dickens",
+        "William Shakespeare",
+        "Mark Twain",
+        "Jane Austen"
+      ],
+      "answer": 1
+    },
+    {
+      "category": "Arts",
+      "q": "How many strings does a standard guitar have?",
+      "options": [
+        "6",
+        "7",
+        "4",
+        "5"
+      ],
+      "answer": 0
+    },
+    {
+      "category": "Arts",
+      "q": "Who composed 'Ode to Joy'?",
+      "options": [
+        "Mozart",
+        "Ludwig van Beethoven",
+        "Chopin",
+        "Bach"
+      ],
+      "answer": 1
+    },
+    {
+      "category": "Arts",
+      "q": "Who is the author of the Harry Potter books?",
+      "options": [
+        "Roald Dahl",
+        "Stephen King",
+        "Tolkien",
+        "J.K. Rowling"
+      ],
+      "answer": 3
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+:root{
+  --ink:#2c2541; --soft-ink:#6b6385; --muted:#9a93ad; --line:#ece8f4;
+  --accent:#8b6cff; --accent-deep:#6b4eef; --accent-soft:#f1ecff;
+  --good:#1aa179; --good-bg:#e6f7f0; --good-line:#bfe8d8;
+  --bad:#e8617f; --bad-bg:#fdeef1; --bad-line:#f6cdd7;
+  --sans:"Inter",system-ui,-apple-system,Segoe UI,Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font-family:var(--sans);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+
+.app{display:flex;min-height:100vh}
+
+/* ---------- left rail ---------- */
+.rail{width:330px;flex:none;position:relative;overflow:hidden;color:#fff;padding:38px 34px;
+  display:flex;flex-direction:column;gap:26px;
+  background:linear-gradient(160deg,#7a5cff 0%,#9b5cff 48%,#ff8bb0 100%)}
+.brand{display:flex;align-items:center;gap:11px;font-size:20px;font-weight:800;z-index:2}
+.brand b{color:#ffe08a}
+.logo{display:flex;filter:drop-shadow(0 6px 12px rgba(0,0,0,.25));border-radius:11px}
+.rail-tag{font-size:21px;font-weight:800;line-height:1.4;letter-spacing:-.3px;z-index:2;opacity:.96}
+
+.hud{margin-top:auto;display:none;flex-direction:column;gap:18px;z-index:2}
+.app.playing .hud{display:flex}
+.app.playing .rail-tag{display:none}
+.hud-cat{align-self:flex-start;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.7px;
+  background:rgba(255,255,255,.22);padding:7px 14px;border-radius:30px}
+.hud-q{font-size:30px;font-weight:900;letter-spacing:-.5px}
+.hud-q small{font-size:17px;font-weight:700;opacity:.7}
+.hud-score{display:flex;align-items:baseline;gap:8px}
+.hud-score b{font-family:var(--mono);font-size:30px;font-weight:700}
+.hud-score small{font-size:13px;opacity:.8;text-transform:uppercase;letter-spacing:.5px}
+.dots{display:flex;flex-wrap:wrap;gap:7px}
+.dots i{width:12px;height:12px;border-radius:50%;background:rgba(255,255,255,.28)}
+.dots i.now{background:#fff;box-shadow:0 0 0 3px rgba(255,255,255,.3)}
+.dots i.ok{background:#7ef0c0}
+.dots i.no{background:#ff9db4}
+
+.blob{position:absolute;border-radius:50%;background:rgba(255,255,255,.13);z-index:1}
+.blob1{width:240px;height:240px;right:-90px;top:-70px;animation:float 9s ease-in-out infinite}
+.blob2{width:170px;height:170px;left:-70px;bottom:60px;background:rgba(255,255,255,.1);animation:float 11s ease-in-out infinite reverse}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(22px)}}
+
+/* ---------- right stage ---------- */
+.stage{flex:1;display:flex;align-items:center;justify-content:center;padding:48px 40px;
+  background:#fbf7ff;background-image:radial-gradient(700px 460px at 90% 8%,#fdeaf2,transparent),radial-gradient(620px 460px at 4% 100%,#eaf0ff,transparent)}
+.screen{width:100%;max-width:620px}
+.screen.hidden{display:none}
+
+h1{font-size:34px;font-weight:900;letter-spacing:-.7px;margin-bottom:8px}
+.lead{color:var(--soft-ink);font-size:16px;margin-bottom:32px}
+
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:30px}
+.fields label{display:flex;flex-direction:column;gap:8px;font-size:11.5px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);font-weight:800}
+select{font-family:inherit;font-size:15.5px;font-weight:600;color:var(--ink);background:#fff;border:2px solid var(--line);
+  border-radius:16px;padding:14px 15px;cursor:pointer;outline:none;transition:.15s}
+select:focus{border-color:var(--accent)}
+.btn{font-family:inherit;font-weight:800;color:#fff;background:var(--accent);border:0;border-radius:18px;padding:17px 26px;
+  cursor:pointer;font-size:16.5px;transition:.16s;box-shadow:0 14px 30px rgba(139,108,255,.42)}
+.btn:hover{background:var(--accent-deep);transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+.btn.big{width:100%;padding:18px}
+
+.timer{height:10px;background:#efeafa;border-radius:30px;overflow:hidden;margin-bottom:30px}
+.timer>i{display:block;height:100%;width:100%;background:linear-gradient(90deg,#b39bff,#8b6cff);border-radius:30px;transition:width .1s linear}
+
+.question{color:var(--ink);font-size:29px;font-weight:800;line-height:1.3;letter-spacing:-.4px;margin-bottom:28px;text-align:center}
+
+.options{display:flex;flex-direction:column;gap:14px}
+.opt{display:flex;align-items:center;gap:15px;width:100%;text-align:left;cursor:pointer;font-family:inherit;
+  font-size:17px;font-weight:600;color:var(--ink);background:#fff;border:2px solid var(--line);
+  border-radius:999px;padding:18px 22px;transition:transform .12s,border-color .12s,background .12s,box-shadow .12s}
+.opt:hover:not(:disabled){border-color:var(--accent);background:#f7f4ff;transform:translateY(-2px);box-shadow:0 10px 22px rgba(139,108,255,.16)}
+.opt:active:not(:disabled){transform:translateY(0)}
+.opt:disabled{cursor:default}
+.opt .num{width:36px;height:36px;flex:none;border-radius:50%;background:var(--accent-soft);color:var(--accent-deep);
+  display:flex;align-items:center;justify-content:center;font-weight:800;font-size:15px}
+.opt .label{flex:1}
+.opt .mark{font-size:22px;font-weight:900;opacity:0}
+.options.revealed .opt:not(.correct):not(.wrong){opacity:.45}
+.opt.correct{background:var(--good-bg);border-color:var(--good-line)}
+.opt.correct .num{background:var(--good);color:#fff}
+.opt.correct .mark{opacity:1;color:var(--good)}
+.opt.wrong{background:var(--bad-bg);border-color:var(--bad-line)}
+.opt.wrong .num{background:var(--bad);color:#fff}
+.opt.wrong .mark{opacity:1;color:var(--bad)}
+
+/* result */
+#result{text-align:center}
+.result-emoji{line-height:0;margin-bottom:16px;color:var(--accent-deep)}
+.result-score{font-family:var(--mono);font-size:56px;font-weight:700;color:var(--accent-deep);margin:8px 0 14px}
+
+/* ---------- mobile ---------- */
+@media (max-width:860px){
+  .app{flex-direction:column}
+  .rail{width:auto;flex-direction:row;align-items:center;flex-wrap:wrap;gap:14px 18px;padding:18px 20px}
+  .rail-tag{display:none}
+  .brand{font-size:18px}
+  .hud{margin-top:0;flex-direction:row;align-items:center;flex-wrap:wrap;gap:12px 16px;width:100%}
+  .app.playing .hud{display:flex}
+  .hud-q{font-size:20px}.hud-q small{font-size:14px}
+  .hud-score{margin-left:auto}.hud-score b{font-size:22px}
+  .hud-cat{order:-1}
+  .dots i{width:9px;height:9px}
+  .blob{display:none}
+  .stage{padding:28px 18px;min-height:calc(100vh - 120px)}
+  h1{font-size:27px}.question{font-size:23px}
+  .fields{grid-template-columns:1fr}
+  .opt{font-size:16px;padding:16px 18px}
+}
